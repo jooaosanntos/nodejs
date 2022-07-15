@@ -1,6 +1,6 @@
 // Conexão com o Banco de Dados
 const Sequelize = require("sequelize")
-const sequelize = new Sequelize("postapp", "root", "hfisenpiifbg03", {
+const sequelize = new Sequelize("postapp", "root", "12345", {
     host: "localhost",
     dialect: "mysql"
 })
