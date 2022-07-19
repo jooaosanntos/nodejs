@@ -1,10 +1,14 @@
-<h1>Lista de posts</h1>
+<div class="d-flex w-100 flex-wrap justify-content-center">
+    {{#each posts}}
 
-{{#each posts}}
+    <div class="card m-3" style="width: 25rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{titulo}}</h5>
+            <p class="card-text">{{conteudo}}</p>
+            <a href="/deletar/{{id}}" class="btn btn-primary">Deletar</a>
+        </div>
+    </div>
 
-    <h2>{{titulo}}!</h2>
-    <p>{{conteudo}}</p>
-    <a href="/deletar/{{id}}"><button>Deletar</button></a>
-    <hr>
+    {{/each}}
 
-{{/each}}
+</div>

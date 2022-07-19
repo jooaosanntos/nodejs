@@ -50,7 +50,7 @@ app.get("/deletar/:id", (req, res, next) => {
         where:{ 'id': req.params.id }
     })
         .then(function(){
-            res.send("Deletado!")
+            res.redirect("/")
         })
         .catch(function(e){
             res.send("Essa postagem não existe? " + e)
